@@ -1,4 +1,4 @@
-apiVErsion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app
@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: app
-        image: <Image>
+        image: franjaresc/sd-exam3
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: <Port>
+        - containerPort: 8000
