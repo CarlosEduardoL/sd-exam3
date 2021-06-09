@@ -1,3 +1,7 @@
+# This file a deploy a replica of deployment
+# have 2 replicas and name labels is redis-replica
+# here use a image redis:3.2.0-alpine
+# and is expose trough port 6379
 apiVersion: apps/v1
 kind: Deployment
 metadata:
