@@ -19,7 +19,7 @@ deployApp() {
     kubectl apply -f './app-deployment'
 }
 
-deployLocal() {
+deploy() {
     deployDB
     deployApp
 }

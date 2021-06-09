@@ -17,7 +17,7 @@ function deployApp {
     kubectl apply -f './app-deployment'
 }
 
-function deployLocal {
+function deploy {
     deployDB
     deployApp
 }
