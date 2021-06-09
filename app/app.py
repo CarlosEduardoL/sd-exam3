@@ -42,6 +42,12 @@ def principal():
         {% endfor %}
         </table>""",capitals=capitals)
 
+@app.route('/health')
+def health():
+    response = app.response_class(
+        status=200,
+    )
+    return response
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)

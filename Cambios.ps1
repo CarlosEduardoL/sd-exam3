@@ -1,1 +1,0 @@
-kubectl delete -f .\deployment.yml; docker rmi franjaresc/sd-exam3; docker build -t franjaresc/sd-exam3 . ; docker push franjaresc/sd-exam3 ; kubectl apply -f .\deployment.yml
