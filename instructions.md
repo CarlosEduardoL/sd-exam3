@@ -18,17 +18,17 @@ Build a simple REST-based python application (a 'hello world' app is fine) Build
 
 Create the nexts k8s objects for the application:
 
-* Defines a deployment 2 or more pods
-* Defines a health check on the deployment that makes sure /health is responding with a 200
-* Defines a kubernetes service using ClusterIP
-* Defines a kubernetes loadbalancer or kubernetes ingress (it give bonus) to allow traffic on to the pods vía internet.
+- [x] Defines a deployment 2 or more pods
+- [x] Defines a health check on the deployment that makes sure /health is responding with a 200
+- [x] Defines a kubernetes service using ClusterIP
+- [x] Defines a kubernetes **loadbalancer** or kubernetes ingress (it give bonus) to allow traffic on to the pods vía internet.
 
 For create the loadbalancer in a Local Cluster keep in mind that you have to install a add-ons that allow you simulate the LoadBalancer services.
 For microk8s refer to -> https://microk8s.io/docs/addon-metallb
 
 Create the nexts k8s objects for the database:
-* Defines a deployment 2 or more pods
-* Defines a kubernetes service using ClusterIP
+- [x] Defines a deployment 2 or more pods
+- [x] Defines a kubernetes service using ClusterIP
 
 You can take as base this app -> https://github.com/icesi-ops/training_docker/tree/master/05_docker_swarm/01_intro Just change the context of app !!
 
@@ -40,11 +40,11 @@ Create a script (either a standalone script or using Make, Rake, etc..) that aut
 and deploying the application to a k8s cluster.
 The script should include the following options for performing the specific subtasks of an
 endtoend deployment:
-• Build
-• Local unit or integration tests
-• Package
-• Deploy
-• Smoke test
+- [x] Build
+- [ ] Local unit or integration tests
+- [x] Package
+- [x] Deploy
+- [ ] Smoke test
 
 note: test phases should be executed using a test framework for your script language.
 #### ***___END BONUS___***
