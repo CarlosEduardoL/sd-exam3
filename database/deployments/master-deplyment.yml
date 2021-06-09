@@ -1,3 +1,6 @@
+# This file deploy the deployment of database
+# The database have a master and have two replica 
+# The container od db is expose trough port 6379
 apiVersion: apps/v1
 kind: Deployment
 metadata:

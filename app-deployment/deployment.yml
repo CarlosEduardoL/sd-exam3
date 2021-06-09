@@ -1,3 +1,7 @@
+# File where deploy a deployment with 2 replicas
+# The container is in reposotory franjaresc/sd-exam3
+# Label is app to load balancer
+# The lb is expose in port 8000
 apiVersion: apps/v1
 kind: Deployment
 metadata:
