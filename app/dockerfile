@@ -1,6 +1,12 @@
+#-The artifact of the aplication is stored in docker hub.  
+#For make this was used an image of python:3.4-alpine.  
 FROM python:3.4-alpine
+
+#The folder ./code is added. 
 ADD . /code
 WORKDIR /code
+#then into the folder /code is installed pip and added the file requirements.txt 
+#(this file contains the requirements for the aplication). 
 RUN pip install -r requirements.txt
+#Finally with the command CMD the executable of the aplication is setup.  
 CMD ["python", "app.py"]
-
